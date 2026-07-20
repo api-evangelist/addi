@@ -1,0 +1,32 @@
+generated: '2026-07-17'
+method: searched
+source: https://api-docs-sandbox.addi.com/auth/
+docs: https://api-docs-sandbox.addi.com/auth/
+summary:
+  types: [oauth2]
+  oauth2_flows: [clientCredentials]
+  identity_provider: Auth0
+description: >-
+  Addi's merchant credit/checkout API authenticates through Auth0 (Identity as a
+  Service) using the OAuth2 client-credentials flow. Merchants receive a client_id
+  ("Identificador del cliente") and client_secret ("Identificador secreto del
+  cliente") — visible in the first-party VTEX/Magento/PrestaShop plugin
+  configuration — and exchange them at the Auth0 token endpoint for a bearer
+  access token that is presented on subsequent API calls. A separate sandbox
+  ("Ambiente de Desarrollo") environment is used before switching to production.
+schemes:
+- name: Auth0OAuth2
+  type: oauth2
+  scheme: clientCredentials
+  identity_provider: Auth0
+  credentials:
+    client_id: merchant client identifier (Identificador del cliente)
+    client_secret: merchant client secret (Identificador secreto del cliente)
+  token_presentation: Bearer access token in Authorization header
+  environments:
+  - name: sandbox
+    label: Ambiente de Desarrollo
+    docs: https://api-docs-sandbox.addi.com/auth/
+  - name: production
+    api_host: https://api.addi.com
+  sources: [docs, packages/addi-packages.yml]
