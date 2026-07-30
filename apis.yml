@@ -1,7 +1,27 @@
 aid: addi
 name: Addi
-description: Addi is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Addi is a Colombian financial technology company founded in 2018 that provides
+  buy-now-pay-later (BNPL) credit at the point of sale across Latin America.
+  Consumers split purchases into installments using only a national ID — no credit
+  card required — while merchants integrate Addi as a checkout payment method through
+  first-party e-commerce plugins (VTEX IO, Magento 2, PrestaShop) and a REST API
+  secured with Auth0 OAuth2 client-credentials. Addi serves more than two million
+  customers and tens of thousands of merchants in Colombia and Brazil, and is
+  regulated by the Superintendencia Financiera de Colombia.
+accessModel:
+  pricing: unknown
+  onboarding: open
+  trial: false
+  try_now: false
+  public: true
+  label: Open access
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/assets/8Hhy9sRJUr3NC5YbnftP6MrFAOQ.jpg
 url: https://raw.githubusercontent.com/api-evangelist/addi/refs/heads/main/apis.yml
 x-type: company
 x-source: a16z-portfolio
@@ -12,9 +32,76 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- Fintech
+- Payments
+- Buy Now Pay Later
+- Credit
+- Lending
+- Checkout
+- E-commerce
+- Latin America
+- Colombia
+apis:
+- name: Addi Credit & Checkout API
+  description: >-
+    REST API that lets e-commerce merchants create Addi buy-now-pay-later credit
+    applications at checkout. Authentication is handled through Auth0 using the
+    OAuth2 client-credentials flow (client_id + client_secret). A sandbox
+    environment is published for integration testing before going live.
+  humanURL: https://api-docs-sandbox.addi.com/auth/
+  baseURL: https://api.addi.com
+  tags:
+  - Payments
+  - Buy Now Pay Later
+  - Checkout
+  - Credit
+  properties:
+  - type: Authentication
+    url: authentication/addi-authentication.yml
+  - type: Sandbox
+    url: sandbox/addi-sandbox.yml
+  - type: Conformance
+    url: conformance/addi-conformance.yml
+common:
+- type: DeveloperPortal
+  url: https://api-docs-sandbox.addi.com/auth/
+- type: Documentation
+  url: https://api-docs-sandbox.addi.com/auth/
+- type: Website
+  url: https://co.addi.com/
+- type: Blog
+  url: https://medium.com/addi-com
+- type: GitHubOrganization
+  url: https://github.com/AdelanteFinancialHoldings
+- type: Support
+  url: https://co.addi.com/preguntas-frecuentes
+- type: TermsOfService
+  url: https://co.addi.com/tyc-links-addi
+- type: PrivacyPolicy
+  url: https://co.addi.com/pp
+- type: SignUp
+  url: https://co.addi.com/
+- type: Packages
+  url: packages/addi-packages.yml
+- type: SDKs
+  url: packages/addi-packages.yml
+- type: Authentication
+  url: authentication/addi-authentication.yml
+- type: Sandbox
+  url: sandbox/addi-sandbox.yml
+- type: Conformance
+  url: conformance/addi-conformance.yml
+- type: LLMsTxt
+  url: llms/addi-llms.txt
+- type: DomainSecurity
+  url: security/addi-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
