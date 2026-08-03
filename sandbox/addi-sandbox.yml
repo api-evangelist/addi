@@ -1,0 +1,22 @@
+generated: '2026-07-17'
+method: searched
+source: https://api-docs-sandbox.addi.com/auth/
+description: >-
+  Addi publishes a dedicated sandbox environment for merchants to test the
+  credit/checkout integration before going live. The first-party e-commerce
+  plugins expose a "Ambiente de Desarrollo" (development environment) toggle that
+  switches API calls between the sandbox and production hosts. No public test
+  card numbers / magic identifiers are documented; sandbox credit applications are
+  driven with a merchant's sandbox client_id/client_secret.
+environments:
+- name: sandbox
+  label: Ambiente de Desarrollo
+  docs: https://api-docs-sandbox.addi.com/auth/
+  auth: Auth0 OAuth2 client-credentials (sandbox client_id/client_secret)
+- name: production
+  api_host: https://api.addi.com
+  toggle: plugin "Ambiente de Desarrollo" = No
+test_values:
+  note: >-
+    No published test card numbers or magic test identifiers were found in the
+    public documentation; sandbox flows use merchant-issued sandbox credentials.

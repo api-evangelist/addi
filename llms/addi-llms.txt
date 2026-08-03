@@ -1,0 +1,26 @@
+# Addi
+
+> Addi is a Colombian buy-now-pay-later (BNPL) fintech (founded 2018) that lets shoppers split purchases into installments using only a national ID — no credit card. Merchants integrate Addi as a checkout payment method via first-party e-commerce plugins and a REST API secured with Auth0 OAuth2 client-credentials. Addi serves 2M+ customers and tens of thousands of merchants across Colombia and Brazil, and is regulated by the Superintendencia Financiera de Colombia.
+
+## APIs
+
+- [Addi Credit & Checkout API](https://api-docs-sandbox.addi.com/auth/): Create BNPL credit applications at checkout; Auth0 OAuth2 client-credentials. Production host https://api.addi.com
+
+## Docs
+
+- [API Authentication (sandbox)](https://api-docs-sandbox.addi.com/auth/): Auth0-based authentication for merchant integrations
+- [Website (Colombia)](https://co.addi.com/): Consumer + merchant site
+- [Blog](https://medium.com/addi-com): Company blog on Medium
+- [FAQ / Support](https://co.addi.com/preguntas-frecuentes): Help center
+- [Terms of Service](https://co.addi.com/tyc-links-addi)
+- [Privacy Policy](https://co.addi.com/pp)
+
+## Packages
+
+- [addi/magento2-payment](https://packagist.org/packages/addi/magento2-payment): Magento 2 payment/checkout module
+- [addi-vtex-io](https://github.com/AdelanteFinancialHoldings/addi-vtex-io): VTEX IO installments app
+- [addi-prestashop](https://github.com/AdelanteFinancialHoldings/addi-prestashop): PrestaShop checkout plugin
+
+## Repositories
+
+- [GitHub organization (AdelanteFinancialHoldings)](https://github.com/AdelanteFinancialHoldings)

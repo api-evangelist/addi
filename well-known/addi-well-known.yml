@@ -1,0 +1,52 @@
+generated: '2026-07-17'
+method: searched
+hosts:
+- https://api.addi.com
+- https://api-docs-sandbox.addi.com
+- https://co.addi.com
+documents:
+- host: https://api.addi.com
+  path: /.well-known/security.txt
+  status: 401
+- host: https://api.addi.com
+  path: /.well-known/openid-configuration
+  status: 401
+- host: https://api.addi.com
+  path: /.well-known/oauth-authorization-server
+  status: 401
+- host: https://api.addi.com
+  path: /.well-known/api-catalog
+  status: 401
+- host: https://api.addi.com
+  path: /.well-known/ai-plugin.json
+  status: 401
+- host: https://api-docs-sandbox.addi.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://api-docs-sandbox.addi.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: https://api-docs-sandbox.addi.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: https://api-docs-sandbox.addi.com
+  path: /.well-known/api-catalog
+  status: 404
+- host: https://api-docs-sandbox.addi.com
+  path: /.well-known/ai-plugin.json
+  status: 404
+- host: https://co.addi.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://co.addi.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: https://co.addi.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: https://co.addi.com
+  path: /.well-known/api-catalog
+  status: 404
+- host: https://co.addi.com
+  path: /.well-known/ai-plugin.json
+  status: 404

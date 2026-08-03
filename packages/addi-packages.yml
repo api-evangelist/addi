@@ -1,0 +1,33 @@
+generated: '2026-07-17'
+method: searched
+source: https://github.com/AdelanteFinancialHoldings
+description: >-
+  First-party Addi merchant integration libraries — checkout / installment
+  plugins for the major e-commerce platforms. Addi does not publish general-purpose
+  server SDKs on npm/PyPI; integration is via these platform plugins and the REST
+  API.
+packages:
+- language: php
+  registry: packagist
+  name: addi/magento2-payment
+  url: https://packagist.org/packages/addi/magento2-payment
+  install: composer require addi/magento2-payment
+  description: Addi payment/checkout module for Magento 2 (Colombia + Brazil).
+  official: true
+  repo: https://github.com/AdelanteFinancialHoldings/addi-magento2
+- language: typescript
+  registry: vtex-io
+  name: addi-vtex-io
+  url: https://github.com/AdelanteFinancialHoldings/addi-vtex-io
+  install: vtex install (VTEX IO app)
+  description: VTEX IO React app that shows Addi installments on the product page.
+  official: true
+  repo: https://github.com/AdelanteFinancialHoldings/addi-vtex-io
+- language: php
+  registry: github
+  name: addi-prestashop
+  url: https://github.com/AdelanteFinancialHoldings/addi-prestashop
+  install: install PrestaShop module from repository
+  description: Addi PrestaShop checkout plugin.
+  official: true
+  repo: https://github.com/AdelanteFinancialHoldings/addi-prestashop

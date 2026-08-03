@@ -1,0 +1,26 @@
+generated: '2026-07-17'
+method: derived
+source: https://api-docs-sandbox.addi.com/auth/
+description: >-
+  Cross-cutting standards Addi's merchant API conforms to, derived from the
+  documented authentication model (Auth0 OAuth2 / OIDC). No published OpenAPI spec
+  was available to assert spec-level conventions.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    Merchant API authenticates via Auth0 using the OAuth2 client-credentials flow
+    (client_id + client_secret exchanged for a bearer token).
+- id: oidc
+  conforms: true
+  evidence: Auth0 is used as the OpenID Connect / Identity-as-a-Service provider.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No published error-format documentation confirming problem+json.
+- id: fapi
+  conforms: false
+- id: pci-dss
+  conforms: unknown
+  evidence: >-
+    Addi is a regulated payments/credit provider (Superintendencia Financiera de
+    Colombia); no public PCI DSS attestation page was located.
